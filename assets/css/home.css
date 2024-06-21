@@ -1,0 +1,66 @@
+/* Card custom styles */
+.card-custom {
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: white;
+    margin: 20px 0;
+    width: 100%; /* Establecemos el ancho de las tarjetas */
+    max-width: 400px; /* Establecemos el ancho máximo de las tarjetas */
+    transition: transform 0.3s;
+    position: relative; /* Añadimos posición relativa para el contenedor de la tarjeta */
+}
+
+.card-left, .card-right {
+    padding: 20px;
+    flex: 1;
+}
+
+.card-left {
+    background: linear-gradient(135deg, #3b82f6, #0e7490);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-left h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.card-left img {
+    width: 100px; /* Aumentamos el tamaño del logo */
+    height: 100px; /* Aumentamos el tamaño del logo */
+}
+
+.card-right h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.btn-custom {
+    background: #f97316; /* Color naranja */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+    position: absolute; /* Añadimos posición absoluta al botón */
+    bottom: 20px; /* Ajustamos la posición desde abajo */
+    right: 20px; /* Ajustamos la posición desde la derecha */
+    text-decoration: none; /* Quitamos el subrayado */
+}
+
+.btn-custom:hover {
+    background: #ea580c; /* Color naranja más oscuro */
+}
+
+/* Additional styles for hover effects */
+.card-custom:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+}

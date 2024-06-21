@@ -1,0 +1,95 @@
+.navbar {
+  background-color: #f8f9fa;
+  position: relative;
+  padding-bottom: 0;
+  z-index: 1;
+}
+
+.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.navbar-brand .indemin-logo {
+  height: 30px;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 3;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 95px solid transparent;
+  border-right: 95px solid transparent;
+  border-top: 45px solid #f8f9fa;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.triangle .nav-link {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.triangle .home-icon {
+  height: 25px;
+  width: 18px;
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #2c5886; /* Cambia este valor al color que desees */
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.nav-item {
+  padding: 0 15px;
+}
+
+.nav-link {
+  color: #000;
+}
+
+.nav-link img {
+  margin-right: 8px;
+}
+
+.dropdown-menu {
+  right: 0;
+  left: auto;
+  color: #2c5886;
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #2c5886;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #2c5886;
+}

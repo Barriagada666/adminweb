@@ -1,0 +1,81 @@
+/* Login page background */
+body.login-bg::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/IndeminWeb.png') no-repeat center center fixed; /* Ruta a la imagen de fondo */
+    background-size: cover;
+    z-index: -1; /* Coloca el pseudo-elemento detrás de todo el contenido */
+}
+
+/* Spinner styles */
+.spinner {
+    display: none;
+    width: 3rem;
+    height: 3rem;
+    border: 0.4rem solid rgba(0, 0, 0, 0.1);
+    border-top: 0.4rem solid #f97316;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Login container */
+.box-area {
+    width: 930px;
+    background: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para el área de login */
+}
+
+.right-box {
+    padding: 40px 30px 40px 40px;
+}
+
+::placeholder {
+    font-size: 16px;
+}
+
+.rounded-4 {
+    border-radius: 20px;
+}
+.rounded-5 {
+    border-radius: 30px;
+}
+
+.btn-custom {
+    background: #f97316; /* Color naranja */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.btn-custom:hover {
+    background: #ea580c; /* Color naranja más oscuro */
+}
+
+@media only screen and (max-width: 768px) {
+    .box-area {
+        margin: 0 10px;
+    }
+    .left-box {
+        height: 100px;
+        overflow: hidden;
+    }
+    .right-box {
+        padding: 20px;
+    }
+}
