@@ -148,7 +148,15 @@ $(document).ready(function () {
 
             const data = await response.json();
             if (response.status === 201) {
-                showNotification('Checklist creado exitosamente', 'success');
+                Swal.fire({
+                    icon: 'success',
+                    title: '¡Éxito!',
+                    text: 'Checklist creado exitosamente.',
+                    showConfirmButton: false,
+                    timer: 1500
+                }).then(() => {
+                    window.location.href = '../pages/home.html';
+                });
                 $('#checklistForm')[0].reset();
                 $('#componentsContainer').empty();
                 addComponent(); // Agregar el primer componente vacío
